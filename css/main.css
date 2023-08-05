@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -97,40 +97,83 @@ textarea {
 
 
 html {
-  background-color: #eddea4;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Lora', sans-serif;
+}
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+}
+
+main p {
+    font-size: 1.35em;
+}
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
+  max-width: 1200px;
 
 }
 
+p span {
+    font-family: 'Lora', sans-serif;
+  }
+  
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
   line-height: 1.5em;
-  font-size: 1.4em;
-  background-color: #6d9197;
-  height: auto;
+  font-size: 1.1em;
+  background-color: #000000;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*width: 30%;*/
-  padding: 40px;
-  border: 5px solid #2f575d;
+  width: 30%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-family:Arial, Helvetica, sans-serif;
 }
+
+footer {}
+
+footer i {}
 
 
 
